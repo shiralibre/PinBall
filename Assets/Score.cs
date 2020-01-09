@@ -20,19 +20,19 @@ public class Score : MonoBehaviour {
 
         if (yourTag == "SmallCloudTag")
         {
-            score += 10;
+            score += 5;
         }
         if (yourTag == "SmallStarTag")
         {
-            score += 15;
+            score += 10;
         }
         if (yourTag == "LargeCloudTag")
         {
-            score += 20;
+            score += 15;
         }
-        else
+        if (yourTag=="LargeStarTag")
         {
-            score += 25;
+            score += 20;
         }
         this.scoreText.GetComponent<Text>().text = "Score:"+this.score.ToString();
     }
